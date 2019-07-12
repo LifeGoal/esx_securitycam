@@ -75,7 +75,7 @@ end)
 
 Citizen.CreateThread(function()
 	while true do
-		Citizen.Wait(1)
+		Citizen.Wait(0)
 
 		local coords = GetEntityCoords(PlayerPedId())
 		local isInMarker = false
@@ -227,7 +227,7 @@ end)
 
 Citizen.CreateThread(function()
 	while true do
-		Citizen.Wait(10)
+		Citizen.Wait(0)
 
 		if IsControlJustReleased(0, Keys['E']) and CurrentAction == 'cameras' then
 
@@ -621,7 +621,7 @@ end)
 -- HACKING BANK
 Citizen.CreateThread(function()
 	while true do
-		Citizen.Wait(10)
+		Citizen.Wait(0)
 
 		if IsControlJustReleased(0, Keys['E']) and CurrentAction == 'hackingBank' then
 			if bankHacked then
@@ -692,7 +692,7 @@ end)
 -- UNHACK POLICE
 Citizen.CreateThread(function()
 	while true do
-		Citizen.Wait(10)
+		Citizen.Wait(0)
 
 		if IsControlJustReleased(0, Keys['E']) and CurrentAction == 'UnHackPolice' then
 			if policeHacked then
@@ -821,7 +821,7 @@ end)
 
 Citizen.CreateThread(function()
 	while true do
-		Citizen.Wait(10)
+		Citizen.Wait(0)
 		if blockbuttons then
 			DisableControlAction(2, 24, true)
 			DisableControlAction(2, 257, true)
